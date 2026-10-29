@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>アルピニスト・ダッシュボード</title>
+    <meta
+      name="description"
+      content="電波の無い山でもウォッチ単体で動く登山計器。アルピニスト・ダッシュボードのサポートページです。"
+    />
+    <style>
+      :root {
+        --ink: #14201a;
+        --muted: #4f5d55;
+        --bg: #fbfcf8;
+        --card: #eef3e6;
+        --rule: #d7e0cc;
+        --accent: #4d7c0f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --ink: #e8efe2;
+          --muted: #a3b0a6;
+          --bg: #07100b;
+          --card: #111d16;
+          --rule: #1f2e25;
+          --accent: #bef264;
+        }
+      }
+      :root[data-theme="dark"] {
+        --ink: #e8efe2;
+        --muted: #a3b0a6;
+        --bg: #07100b;
+        --card: #111d16;
+        --rule: #1f2e25;
+        --accent: #bef264;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        line-height: 1.9;
+      }
+      .inner {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        padding-block: 48px 24px;
+        border-bottom: 1px solid var(--rule);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 28px;
+        text-wrap: balance;
+      }
+      header p {
+        margin: 6px 0 0;
+        color: var(--muted);
+      }
+      main {
+        padding-block: 24px 64px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 36px 0 8px;
+      }
+      .lead {
+        background: var(--card);
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin: 0;
+      }
+      ul {
+        padding-left: 1.3em;
+      }
+      li {
+        margin: 4px 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        border-top: 1px solid var(--rule);
+        margin-top: 48px;
+        padding-top: 16px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>アルピニスト・ダッシュボード</h1>
+        <p>Wear OS とスマートフォンの登山計器</p>
+      </div>
+    </header>
+
+    <main class="inner">
+      <p class="lead">
+        電波の届かない山の中で、ウォッチだけで動き続ける登山の計器です。
+        気圧高度・引き返し時刻・歩いた軌跡・コンパス・遭難信号をウォッチに、
+        ルートの送信と山行の振り返りをスマートフォンに置いています。
+      </p>
+
+      <h2>ウォッチでできること</h2>
+      <ul>
+        <li>気圧高度計（GPS の標高で天気による気圧のずれを自動で補正）</li>
+        <li>登り速度・今日の行動時間・休憩時間・累積標高</li>
+        <li>日没と当日の実績から出す引き返し時刻</li>
+        <li>歩いた軌跡と取り込んだルート（GPX）をコンパスの上に表示</li>
+        <li>国際山岳遭難信号（1分間に6回）の音と光</li>
+      </ul>
+
+      <h2>スマートフォンでできること</h2>
+      <ul>
+        <li>ルート（GPX）をウォッチへ送る</li>
+        <li>ウォッチの記録を取り出して山行を振り返る</li>
+        <li>出発前の設定（下り比率・予備時間・下山地点の標高）</li>
+        <li>スマートフォン単体の高度計・コンパス</li>
+      </ul>
+
+      <h2>ご注意</h2>
+      <p>
+        本アプリは医療機器ではありません。表示する値は参考値です。
+        「試験中」の表示がある機能（気圧の傾向・高度順応）は参考にとどめ、
+        天気と体調の判断はご自身の目と感覚を優先してください。
+      </p>
+
+      <h2>プライバシー</h2>
+      <p>
+        記録は端末の中にだけ保存し、開発者には届きません。
+        詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。
+      </p>
+
+      <h2>お問い合わせ</h2>
+      <p><a href="mailto:iona.null2works@gmail.com">iona.null2works@gmail.com</a></p>
+
+      <footer>
+        <p>提供者：Daiki Maruyama</p>
+      </footer>
+    </main>
+  </body>
+</html>

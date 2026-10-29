@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="登山計器アプリ「アルピニスト・ダッシュボード」のプライバシーポリシー。記録は端末の中だけに保存し、開発者は受け取りません。"
+    />
+    <title>プライバシーポリシー｜アルピニスト・ダッシュボード</title>
+    <!--
+      下書き（2026-10-05）。公開する前に本人が確かめること：
+      ・連絡先のメール（いまはチケマモと同じ窓口）
+      ・アプリ内課金を入れたら「6. 支払い」を足す
+      ・ヘルスコネクトを最初の版から外す場合は「3」の該当箇所を外す
+      原本はこのファイル（Wear os/docs/privacy.html）。公開用のリポジトリへはここから写す
+    -->
+    <style>
+      :root {
+        --ink: #14201a;
+        --muted: #4f5d55;
+        --bg: #fbfcf8;
+        --card: #eef3e6;
+        --rule: #d7e0cc;
+        --accent: #4d7c0f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --ink: #e8efe2;
+          --muted: #a3b0a6;
+          --bg: #07100b;
+          --card: #111d16;
+          --rule: #1f2e25;
+          --accent: #bef264;
+        }
+      }
+      :root[data-theme="dark"] {
+        --ink: #e8efe2;
+        --muted: #a3b0a6;
+        --bg: #07100b;
+        --card: #111d16;
+        --rule: #1f2e25;
+        --accent: #bef264;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', sans-serif;
+        line-height: 1.9;
+        padding-inline: 16px;
+      }
+      .inner {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      header {
+        padding-block: 40px 8px;
+        border-bottom: 1px solid var(--rule);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 26px;
+        text-wrap: balance;
+      }
+      header p {
+        margin: 4px 0 16px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      main {
+        padding-block: 24px 64px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 40px 0 12px;
+        padding-left: 12px;
+        border-left: 4px solid var(--accent);
+        text-wrap: balance;
+      }
+      .lead {
+        background: var(--card);
+        border-radius: 12px;
+        padding: 20px;
+        font-weight: 600;
+      }
+      ul {
+        padding-left: 1.3em;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 15px;
+      }
+      .table-wrap {
+        overflow-x: auto;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 8px 10px;
+        border-bottom: 1px solid var(--rule);
+      }
+      th {
+        white-space: nowrap;
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      a {
+        color: var(--accent);
+      }
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+      footer {
+        border-top: 1px solid var(--rule);
+        margin-top: 48px;
+        padding-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inner">
+      <header>
+        <h1>プライバシーポリシー</h1>
+        <p>アルピニスト・ダッシュボード（Wear OS とスマートフォンのアプリ）</p>
+      </header>
+
+      <main>
+        <p class="lead">
+          登山の記録（気圧・高度・歩いた軌跡・心拍など）は、お使いのウォッチとスマートフォンの中にだけ保存します。<br />
+          開発者がこれらを受け取ることはありません。アカウント登録・広告・利用状況の解析の仕組みはありません。
+        </p>
+
+        <h2>1. 端末の中に保存する情報</h2>
+        <p>記録を開始している間、次の情報を端末の中に保存します。</p>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>情報</th>
+              <th>使いみち</th>
+            </tr>
+            <tr>
+              <td>気圧と、そこから計算した高度</td>
+              <td>高度計・上昇速度・天気の変化（気圧の傾向）・山行の振り返り</td>
+            </tr>
+            <tr>
+              <td>位置情報（GPS の緯度・経度・標高・精度）</td>
+              <td>歩いた軌跡、来た道を戻るための表示、高度計の補正、日没の計算</td>
+            </tr>
+            <tr>
+              <td>心拍数（ウォッチのセンサー）</td>
+              <td>画面への表示と、山行の振り返り</td>
+            </tr>
+            <tr>
+              <td>歩数（停止しているかの判定）</td>
+              <td>休憩中の気圧の観測と、高度計の補正。歩数そのものは保存しません</td>
+            </tr>
+            <tr>
+              <td>高山病の症状の申告（本人が入力したもの）</td>
+              <td>高度順応の振り返り</td>
+            </tr>
+            <tr>
+              <td>電池の残量</td>
+              <td>電池があと何時間もつかの見込み</td>
+            </tr>
+            <tr>
+              <td>取り込んだルート（GPX ファイル）・校正の値・設定</td>
+              <td>計画との比較、高度計の基準、画面の設定</td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          位置情報は、本人が記録を開始してから終了するまでの間だけ使います。記録していないときに、
+          画面の裏で位置情報を取得することはありません。
+        </p>
+
+        <h2>2. ウォッチとスマートフォンの間の受け渡し</h2>
+        <p>
+          ルートの送信・記録の取り出し・設定の同期・記録の開始と停止の連動のために、
+          ご自身のウォッチとスマートフォンの間で上の情報を受け渡します。受け渡しには Google Play 開発者サービスの
+          通信の仕組み（Wearable Data Layer）を使います。開発者や第三者のサーバーには送りません。
+        </p>
+
+        <h2>3. ヘルスコネクトから読む情報（スマートフォン）</h2>
+        <p>
+          許可していただいた場合に限り、ヘルスコネクトから血中酸素・安静時心拍・心拍・心拍変動・睡眠・呼吸数を読み取ります。
+          就寝した標高と並べて、高い所で寝た夜の体の変化を振り返るためです。
+        </p>
+        <ul>
+          <li>読み取った値は画面に表示するだけで、アプリの中にも外にも保存・送信しません</li>
+          <li>ヘルスコネクトへ書き込むことはありません</li>
+          <li>許可はヘルスコネクトの設定からいつでも取り消せます</li>
+        </ul>
+        <p class="muted">
+          本アプリは医療機器ではありません。表示する値は参考値であり、体調の判断はご自身の感覚と医療の専門家の助言を優先してください。
+        </p>
+
+        <h2>4. インターネットへの通信</h2>
+        <p>
+          スマートフォンのアプリは、電波があるときに限り、気象庁のウェブサイトから近くの気象台の気圧の観測値を取得します
+          （気圧の変化の「参考」として表示するため）。このとき気象庁のサーバーに送られるのは、
+          いちばん近い気象台の地点番号と、通信に必要な IP アドレスなどの情報です。お使いの緯度・経度そのものは送りません。
+        </p>
+        <p>ウォッチのアプリはインターネットへ通信しません。</p>
+
+        <h2>5. ご自身で送る場合</h2>
+        <p>
+          「他のアプリへ送る」「スマホへ送る」などを操作したときは、ご自身が選んだアプリ（メール、地図アプリなど）へ
+          記録のファイルを渡します。渡した先での扱いは、そのアプリの方針に従います。
+        </p>
+
+        <h2>6. 第三者への提供</h2>
+        <p>
+          前述の気象庁への通信（4）を除き、利用者の情報を第三者に提供することはありません。
+          広告配信・利用状況の解析・クラッシュ報告の仕組みは搭載していません。
+        </p>
+
+        <h2>7. 保存期間と削除</h2>
+        <ul>
+          <li>ウォッチの記録は、新しい記録を始めたときに1つ前の山行のぶんだけを残し、それより古いものは消えます</li>
+          <li>ウォッチの「診断」の画面から、記録とルートをいつでも消せます</li>
+          <li>スマートフォンに取り込んだ記録と、スマートフォンで記録した山行は、消すまで残ります。
+            スマートフォンの「山行」の画面で山行を開き、「この山行を消す」からいつでも消せます</li>
+          <li>アプリをアンインストールすると、端末に保存したすべての情報が消えます</li>
+          <li>端末のバックアップ（Google ドライブへの自動バックアップ）の対象にしていません</li>
+        </ul>
+        <p class="muted">開発者は情報を受け取っていないため、開発者の側で削除や開示に応じるべき情報はありません。</p>
+
+        <h2>8. お子様の利用について</h2>
+        <p>本アプリは18歳以上の方を対象としています。</p>
+
+        <h2>9. 本ポリシーの変更</h2>
+        <p>
+          内容を変更する場合は本ページを更新し、変更日を明記します。重要な変更は、アプリの更新情報でもお知らせします。
+        </p>
+
+        <h2>10. お問い合わせ</h2>
+        <p>
+          本ポリシーに関するご質問は、下記までご連絡ください。<br />
+          <a href="mailto:iona.null2works@gmail.com">iona.null2works@gmail.com</a>
+        </p>
+
+        <footer class="muted">
+          <p>
+            制定日：2026年10月29日<br />
+            提供者：Daiki Maruyama
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
